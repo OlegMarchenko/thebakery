@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="scss/main.css">
+    <title>The Bakery</title>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="head-container">
+        <div class="container">
+            <header class="header">
+                <div class="top-header">
+                    <div class="location">
+                        <div class="address">Ginger Ave 1, Gingertown, GNGR</div>
+                        <div class="schedule">Monday - Sunday: 8 am - 9 pm</div>
+                    </div>
+                    <div class="logo">
+                        <a href="#"><img src="imsges/bakery-logo.png" alt="logo"></a>
+                    </div>
+                    <div class="socials">
+                        <ul>
+                            <li><a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                     width="26" height="20" viewBox="0 0 26 20">
+                                    <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                                        <x:xmpmeta xmlns:x="adobe:ns:meta/"
+                                                   x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                                            <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                                                <rdf:Description rdf:about=""/>
+                                            </rdf:RDF>
+                                        </x:xmpmeta>
+                                        <?xpacket end="w"?></metadata>
+                                    <image id="twitter" width="26" height="20"
+                                           xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAUCAQAAAA5SeU1AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhCgMRMjJxihl+AAABqklEQVQ4y4WTP0jUYRiAH89/GIFDaJSaUVeRLS2BDoJHDUHhnuki1dASLd0QRDg4CBGUS4sN7emgpkNLnFNCYdcNcRpmUUIRgS1p9zT87iff3Q+v713ePzzv+37v+31ITck4bd5lx20teybsrxPgFsOcI3mmuMoCb9lPhiOM0cwNWuiM6EV1PlHlsXps1xq14Io65U3Edt973KKr7guQtHqqIskhl/2p3kXs9quIr/xtNqizUlW53ax/XBLEejcdFPGaa6751CEPuuRMouGXvpAIwgcWdgMjLljwg/o8AW15OYZanVWf2BKEe+z1TALa8EoMNVrymbkoSw054CfTIg3ANu9YZ4Rmap9L7FAEynfqU/v+UwfnXIy02DGp3vOsXTbtCW2bqYQuqFo0a9seyCM/x3rsalIf1mitTR2ohvCieqes1yWgnXDVYeCEcxZ87XVTVcgbN0I7FYz0C6ucZoscpcDbSJFuusLZN9DLECWkkzTf6SdXsZtRJsmTrtqYHU6ouu75oIV6e7xv3k1vJ8cS/dwUwwzSwQ8+8o0UhznJUX4xzTh/k0/jH4lW8ipJeeXnAAAAAElFTkSuQmCC"/>
+                                </svg>
+                            </a></li>
+                            <li><a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                     width="24" height="24" viewBox="0 0 24 24">
+                                    <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                                        <x:xmpmeta xmlns:x="adobe:ns:meta/"
+                                                   x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                                            <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                                                <rdf:Description rdf:about=""/>
+                                            </rdf:RDF>
+                                        </x:xmpmeta>
+                                        <?xpacket end="w"?></metadata>
+                                    <image id="instagram" width="24" height="24"
+                                           xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhCgMRMTi6cqOjAAABvklEQVQ4y42Uv2uTURSGn6axohE10ap0ELTiIBaRuhTJEJeCCrqIQ/FHFRoo2qFQ6aTQ/8A/wKE6uqqjoA4iJVBKsDhouyg02uInJWooeRzy9SM3jdH3Tuec9773nHPPvYiIYy7aCR+daDC7BHhNniWesgZ0EeIzVbJc5gLvGeQX4hv1YnxSu5Wz1z6H1AXBa+rwX8lpv8VJnfKgOokrLnVQz6gzHlYfiwua4gCzdMYPvgLdwBNAHdmie8RRb3tcxJJVfxp5STyvaTa4QoZUrLZOjSLnYustD3lJhW1EHKNIgQ2M2nR9yn6PekfVFSuuuhpHIqw7Y9acOXP2+E49lKS216pld8TRrFPWUe8GPZkMqhlV9yfWdU0BmaQfN4FHQYdmgVuJtYuk2Aa6gXrgqcfeBOGGF8BI4LkKPAs86nRTzvPq7sTqUZebouONGppRoEZEkX1kucE6kG9htJyAfZaS+1i0P4iNaxqoBQpfGOQkBVK8Yr5F/TekgZ1bxq1Mue0Y7gFc80OH8Q7XnOKYeva/6CfU+5utzP+Tfkb91PgEtjPHACWeU2mbufQyzBDLnOb75v57ydttj8gHDeYf4Tn1dBOCO3wAAAAASUVORK5CYII="/>
+                                </svg>
+                            </a></li>
+                            <li><a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                     width="26" height="20" viewBox="0 0 26 20">
+                                    <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                                        <x:xmpmeta xmlns:x="adobe:ns:meta/"
+                                                   x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                                            <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                                                <rdf:Description rdf:about=""/>
+                                            </rdf:RDF>
+                                        </x:xmpmeta>
+                                        <?xpacket end="w"?></metadata>
+                                    <image id="contact" width="26" height="20"
+                                           xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAUCAQAAAA5SeU1AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhCgMRMw8w+WQuAAABUElEQVQ4y43TMUiVURjG8edeJAiSpoYLiYUJFjQEBopxoRJKXKKWkIiG9kKkxcE5o8YiI3BtioJLEEJjUyDRIBI4ldYQFS1xqV9DH3E/9Xa/c5b34T1/nudw3lNzPYPZl0aqrc/5ns0aSZK3OVgB2cpI6kl88kbboFTY+33zzvtoO2wB4z2RISw74EtwViz3xIbREscILol4gImuyFE8F3FGO7hQNB6h2RV5UdTNMhSPd3UbxrN/agcUD3Fyx/VbHXoXKFYxVnL5Wuo3tevbnm82x/Myr3MqSTKS9aykL4vbTpWc5nBZLOGQ/iLYBG53izeHa0V9Hzwt1HncK0MXRdzElY7sT6x0qCncEXH6LzQtbuHqfyfiXIGN+h00zPREIiYxb68f8VELM5WmfAqvrMVPnKiERDTwqy97ktzNQMWf+yFJveZGhnIktYpQspGNP0et96zCjr3uAAAAAElFTkSuQmCC"/>
+                                </svg>
+                            </a></li>
+                            <li><a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                     width="24" height="24" viewBox="0 0 24 24">
+                                    <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                                        <x:xmpmeta xmlns:x="adobe:ns:meta/"
+                                                   x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                                            <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                                                <rdf:Description rdf:about=""/>
+                                            </rdf:RDF>
+                                        </x:xmpmeta>
+                                        <?xpacket end="w"?></metadata>
+                                    <image id="phone-call_1_" data-name="phone-call (1)" width="24" height="24"
+                                           xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhCgMRMyScRZ1uAAABm0lEQVQ4y33TT4iNYRTH8cNMiezM4kokVlhIs7CS0kiaxai7ln+JTJpmitQUXQtTJDQlFvJfGRuyVkoWFrJB96XGREnRLKZGadLH4j73nXvf+17PsznP+fV9zjnPOU+ILnsImXP62v1NY4+nRtqk9S7IwHVLi8BpjTXVEadiEn/0twJjuJqSeF6S3AbT2N0E9uJykqp4kuz9nhnKoZfY1gDmZC23VXP8GJi1MynfLDQARtsSuIklyR7wGQeEsAp3G8D5NmDG9xwI4SF2COEaVoYf6rnY6wM2Foqe8VsIPbgYrpBLGTZ1vNIWVIXwyUKoYDxJTJd2na9CmGjc/TaPsQsnSoDjTgmhz74Q1qGWpMfY2nW+8tF4gEpy1UvKLhm+v74ka5mfza4Ka71vid8C9ONOsleoY1hYg1lTuFcEwjDO5Kf7+Ji/zhHcLgJhog0ZNCfTm06HcKMIhEuY7FLuYRwsAmEU76zu0r4XnUAYAGMd/hoGy4Cw3CPMO6kn943jbGcNi3u7N+C1mhGvFj/Bf4bAZrf8AvOONr3/AJ31zOSnGEX6AAAAAElFTkSuQmCC"/>
+                                </svg>
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bottom-header">
+                    <nav>
+                        <ul class="navbar-nav">
+                            <li><a href="#">Features</a></li>
+                            <li class="active"><a href="#">Breads</a></li>
+                            <li><a href="#">Desserts</a></li>
+                            <li><a href="#">Pies</a></li>
+                            <li><a href="#">About us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <div class="section-slider">
+                <div class="sl_slide">
+                    <div class="about-product">Unspeakably Good</div>
+                </div>
+                <div class="choose-color">
+                    <div class="color-scheme">Color scheme:</div>
+                    <div class="buttons-list">
+                        <a href="#" class="btn btn-radio js-theme-light active">Light</a>
+                        <a href="#" class="btn btn-radio js-theme-dark">Dark</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

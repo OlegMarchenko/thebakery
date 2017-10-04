@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Adobe Garamond Pro Bold';
+  src: url("../fonts/AGaramondPro-Bold.woff2") format("woff2"), url("../fonts/AGaramondPro-Bold.woff") format("woff"), url("../fonts/AGaramondPro-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'Adobe Garamond Pro';
+  src: url("../fonts/AGaramondPro-Regular.woff2") format("woff2"), url("../fonts/AGaramondPro-Regular.woff") format("woff"), url("../fonts/AGaramondPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Helvetica LT Std';
+  src: url("../fonts/HelveticaLTStd-Light.woff2") format("woff2"), url("../fonts/HelveticaLTStd-Light.woff") format("woff"), url("../fonts/HelveticaLTStd-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+/*# sourceMappingURL=type.css.map */

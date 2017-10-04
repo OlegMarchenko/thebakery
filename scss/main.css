@@ -1,0 +1,186 @@
+html {
+  box-sizing: border-box;
+  font: 16px/1.6 'Helvetica LT Std', sans-serif; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+* a {
+  text-decoration: none;
+  color: #4f4f52; }
+
+* svg {
+  fill: currentcolor; }
+
+ul {
+  margin: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+h1, h2, h3, h4, h5 {
+  margin: 0; }
+
+form,
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0; }
+
+ul {
+  padding-left: 0; }
+
+li {
+  list-style: none; }
+
+.wrapper {
+  position: relative;
+  margin: 0 auto; }
+
+.container {
+  max-width: 1230px;
+  padding: 0 30px;
+  margin: 0 auto; }
+
+@font-face {
+  font-family: 'Adobe Garamond Pro Bold';
+  src: url("../fonts/AGaramondPro-Bold.woff2") format("woff2"), url("../fonts/AGaramondPro-Bold.woff") format("woff"), url("../fonts/AGaramondPro-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'Adobe Garamond Pro';
+  src: url("../fonts/AGaramondPro-Regular.woff2") format("woff2"), url("../fonts/AGaramondPro-Regular.woff") format("woff"), url("../fonts/AGaramondPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Helvetica LT Std';
+  src: url("../fonts/HelveticaLTStd-Light.woff2") format("woff2"), url("../fonts/HelveticaLTStd-Light.woff") format("woff"), url("../fonts/HelveticaLTStd-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+.header {
+  padding-top: 20px; }
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.socials ul {
+  display: flex;
+  margin: 0 -10px; }
+.socials li {
+  display: inline-block;
+  margin: 0 10px; }
+.socials a {
+  display: flex;
+  width: 47px;
+  height: 47px;
+  justify-content: center;
+  align-items: center;
+  transition: all .2s;
+  border: 1px solid transparent; }
+  .socials a:hover {
+    border: 1px solid #ffffff; }
+
+.location {
+  font-size: 14px;
+  color: #fff;
+  position: relative;
+  padding-left: 61px; }
+  .location::before {
+    content: '';
+    position: absolute;
+    background: url("../imsges/placeholder.png") center center no-repeat;
+    top: 50%;
+    left: 0;
+    width: 47px;
+    height: 47px;
+    transform: translateY(-50%);
+    border: 1px solid #fff;
+    cursor: pointer; }
+
+.bottom-header {
+  padding-top: 14px; }
+
+.navbar-nav {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 2px 0; }
+  .navbar-nav li {
+    display: inline-block;
+    min-width: 108px;
+    text-align: center;
+    margin: 0 25px;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    transition: .3s all; }
+    .navbar-nav li:hover, .navbar-nav li.active {
+      border-top: 1px solid #d3a929;
+      border-bottom: 1px solid #d3a929; }
+  .navbar-nav a {
+    display: block;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 18px 0; }
+
+.head-container {
+  background: url("../imsges/ginger-bakery-02-1-1920x1280.jpg") no-repeat;
+  background-size: cover;
+  position: relative; }
+  .head-container::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.35); }
+  .head-container .container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    max-width: 1070px;
+    display: flex;
+    flex-direction: column; }
+
+.choose-color {
+  display: flex;
+  font-size: 26px; }
+
+.section-slider {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: 'Adobe Garamond Pro', sans-serif;
+  margin-top: -75px; }
+
+.about-product {
+  font-size: 100px; }
+
+.btn-radio {
+  position: relative;
+  padding-left: 15px;
+  color: #fff; }
+
+.btn-radio:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  background: #fff; }
+
+.btn-radio.active:before {
+  background: red; }
+
+/*# sourceMappingURL=main.css.map */

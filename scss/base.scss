@@ -1,0 +1,59 @@
+html {
+  box-sizing: border-box;
+  font: 16px/1.6 'Helvetica LT Std', sans-serif;
+
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+* a  {
+  text-decoration: none;
+  color: #4f4f52;
+}
+
+* svg  {
+  fill: currentcolor;
+}
+
+ul {
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+form,
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.wrapper {
+  position: relative;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1230px;
+  padding: 0 30px;
+  margin: 0 auto;
+}

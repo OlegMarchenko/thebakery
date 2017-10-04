@@ -1,0 +1,19 @@
+.btn-radio{
+  position: relative;
+  padding-left: 15px;
+  color: #fff;
+}
+.btn-radio:before{
+  content:'';
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  background: #fff;
+}
+.btn-radio.active:before{
+  background: red;
+}
