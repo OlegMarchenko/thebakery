@@ -1,0 +1,45 @@
+.slick-prev,
+.slick-next {
+  width: 52px;
+  height: 52px;
+  z-index: 1001;
+  transition: .2s all;
+}
+
+.slick-prev {
+    background: url("../imsges/prev-arrow.png") no-repeat;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    top: 19px;
+    left: 22px;
+    transform: rotate(45deg);
+    opacity: 1;
+  }
+  &:hover {
+    background: url("../imsges/next-arrow.png") no-repeat;
+  }
+}
+
+.slick-next {
+  background: url("../imsges/next-arrow.png") no-repeat;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    top: 19px;
+    right: 22px;
+    transform: rotate(-45deg);
+    opacity: 1;
+  }
+  &:hover {
+    background: url("../imsges/prev-arrow.png") no-repeat;
+  }
+}

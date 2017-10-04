@@ -39,17 +39,17 @@
 .choose-color {
   display: flex;
   font-size: 26px;
+  justify-content: center;
 }
 
 .section-slider {
-  flex-grow: 1;
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  text-align: center;
   color: #fff;
   font-family: 'Adobe Garamond Pro', sans-serif;
-  margin-top: -75px;
 }
 
 .about-product {

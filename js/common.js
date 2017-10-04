@@ -12,4 +12,5 @@ $(document).ready(function () {
         $('.js-theme-dark').removeClass('active');
     });
 
+    $('.sl_slide').slick();
 });
