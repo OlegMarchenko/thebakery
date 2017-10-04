@@ -45,6 +45,16 @@ li {
   padding: 0 30px;
   margin: 0 auto; }
 
+.container-top {
+  position: relative;
+  padding: 0 30px;
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  max-width: 1070px;
+  display: flex;
+  flex-direction: column; }
+
 @font-face {
   font-family: 'Adobe Garamond Pro Bold';
   src: url("../fonts/AGaramondPro-Bold.woff2") format("woff2"), url("../fonts/AGaramondPro-Bold.woff") format("woff"), url("../fonts/AGaramondPro-Bold.ttf") format("truetype");
@@ -127,11 +137,11 @@ li {
     font-size: 14px;
     padding: 18px 0; }
 
-.head-container {
+.light-header {
   background: url("../imsges/ginger-bakery-02-1-1920x1280.jpg") no-repeat;
   background-size: cover;
   position: relative; }
-  .head-container::before {
+  .light-header::before {
     position: absolute;
     content: '';
     top: 0;
@@ -139,13 +149,19 @@ li {
     bottom: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.35); }
-  .head-container .container {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    max-width: 1070px;
-    display: flex;
-    flex-direction: column; }
+
+.dark-header {
+  background: url("../imsges/ginger-bakery-02-1-1920x1280.jpg") no-repeat;
+  background-size: cover;
+  position: relative; }
+  .dark-header::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.55); }
 
 .choose-color {
   display: flex;
@@ -164,23 +180,26 @@ li {
 .about-product {
   font-size: 100px; }
 
+.color-scheme {
+  padding-right: 15px; }
+
 .btn-radio {
   position: relative;
-  padding-left: 15px;
+  padding-left: 28px;
   color: #fff; }
 
 .btn-radio:before {
   content: '';
   position: absolute;
   left: 0;
-  top: 5px;
-  width: 10px;
-  height: 10px;
+  top: 8px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
-  border: 3px solid #fff;
+  border: 4px solid #fff;
   background: #fff; }
 
 .btn-radio.active:before {
-  background: red; }
+  background: #d3a929; }
 
 /*# sourceMappingURL=main.css.map */

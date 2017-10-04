@@ -1,6 +1,6 @@
 //MAIN-SECTION
 
-.head-container {
+.light-header {
   background: url("../imsges/ginger-bakery-02-1-1920x1280.jpg") no-repeat;
   background-size: cover;
   position: relative;
@@ -13,15 +13,28 @@
     left: 0;
     background: rgba(0, 0, 0, .35);
   }
-  .container {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    max-width: 1070px;
-    display: flex;
-    flex-direction: column;
+}
+
+//ELEMENT DARK-THEME
+
+.dark-header {
+  background: url("../imsges/ginger-bakery-02-1-1920x1280.jpg") no-repeat;
+  background-size: cover;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .55);
   }
 }
+
+// END ELEMENT DARK-THEME
+
+
 
 .choose-color {
   display: flex;
@@ -41,4 +54,8 @@
 
 .about-product {
   font-size: 100px;
+}
+
+.color-scheme {
+  padding-right: 15px;
 }
