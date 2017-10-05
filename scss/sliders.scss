@@ -6,7 +6,7 @@
   transition: .2s all;
 }
 
-.section-our-products .slick-prev {
+.section-slider .slick-prev {
     background: url("../imsges/prev-arrow.png") no-repeat;
   &::before {
     content: '';
@@ -25,7 +25,7 @@
   }
 }
 
-.section-our-products .slick-next {
+.section-slider .slick-next {
   background: url("../imsges/next-arrow.png") no-repeat;
   &::before {
     content: '';
@@ -92,7 +92,9 @@
   }
 }
 
-#tabs-1 {
+#tabs-1
+#tabs-2
+#tabs-3 {
   position: relative;
 }
 
