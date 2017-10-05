@@ -6,7 +6,7 @@
   transition: .2s all;
 }
 
-.section-slider .slick-prev {
+.section-our-products .slick-prev {
     background: url("../imsges/prev-arrow.png") no-repeat;
   &::before {
     content: '';
@@ -25,7 +25,7 @@
   }
 }
 
-.section-slider .slick-next {
+.section-our-products .slick-next {
   background: url("../imsges/next-arrow.png") no-repeat;
   &::before {
     content: '';
@@ -42,4 +42,65 @@
   &:hover {
     background: url("../imsges/prev-arrow.png") no-repeat;
   }
+}
+
+
+.section-our-products .slick-prev,
+.section-our-products .slick-next {
+  width: 52px;
+  height: 52px;
+  transition: .2s all;
+}
+
+.section-our-products .slick-prev {
+  background: url("../imsges/prev-cyc-yellow.png") no-repeat;
+  left: 22%;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-left: 2px solid #9b9b9b;
+    border-bottom: 2px solid #9b9b9b;
+    top: 19px;
+    left: 22px;
+    transform: rotate(45deg);
+    opacity: 1;
+  }
+  &:hover {
+    background: url("../imsges/next-cyc-yellow.png") no-repeat;
+  }
+}
+
+.section-our-products .slick-next {
+  background: url("../imsges/next-cyc-yellow.png") no-repeat;
+  right: 47%;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-right: 2px solid #9b9b9b;
+    border-bottom: 2px solid #9b9b9b;
+    top: 19px;
+    right: 22px;
+    transform: rotate(-45deg);
+    opacity: 1;
+  }
+  &:hover {
+    background: url("../imsges/prev-cyc-yellow.png") no-repeat;
+  }
+}
+
+#tabs-1 {
+  position: relative;
+}
+
+.appendArrows {
+  position: absolute;
+  height: 52px;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3000;
 }

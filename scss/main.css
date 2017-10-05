@@ -291,14 +291,10 @@ li {
 .product-holder {
   margin-top: 75px;
   background: #fff;
-  padding: 40px 60px 60px 45px; }
+  padding-top: 40px; }
 
 #tabs {
-  display: flex;
-  font-size: 0;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap; }
+  font-size: 0; }
   #tabs li {
     display: inline-block;
     border-bottom: 2px solid #ebebe8;
@@ -349,6 +345,24 @@ li {
 .recipe-product {
   color: #333;
   font-size: 14px; }
+  .recipe-product p {
+    margin-bottom: 0; }
+  .recipe-product span {
+    display: block; }
+
+.tab-top-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.slick-initialized .slide-item {
+  display: flex;
+  justify-content: flex-end;
+  padding: 69px 65px 79px 45px; }
+
+.description-product {
+  max-width: 432px;
+  margin-left: 137px; }
 
 .btn-radio {
   position: relative;
@@ -376,9 +390,9 @@ li {
   z-index: 1001;
   transition: .2s all; }
 
-.section-slider .slick-prev {
+.section-our-products .slick-prev {
   background: url("../imsges/prev-arrow.png") no-repeat; }
-  .section-slider .slick-prev::before {
+  .section-our-products .slick-prev::before {
     content: '';
     position: absolute;
     width: 14px;
@@ -389,12 +403,12 @@ li {
     left: 22px;
     transform: rotate(45deg);
     opacity: 1; }
-  .section-slider .slick-prev:hover {
+  .section-our-products .slick-prev:hover {
     background: url("../imsges/next-arrow.png") no-repeat; }
 
-.section-slider .slick-next {
+.section-our-products .slick-next {
   background: url("../imsges/next-arrow.png") no-repeat; }
-  .section-slider .slick-next::before {
+  .section-our-products .slick-next::before {
     content: '';
     position: absolute;
     width: 14px;
@@ -405,7 +419,58 @@ li {
     right: 22px;
     transform: rotate(-45deg);
     opacity: 1; }
-  .section-slider .slick-next:hover {
+  .section-our-products .slick-next:hover {
     background: url("../imsges/prev-arrow.png") no-repeat; }
+
+.section-our-products .slick-prev,
+.section-our-products .slick-next {
+  width: 52px;
+  height: 52px;
+  transition: .2s all; }
+
+.section-our-products .slick-prev {
+  background: url("../imsges/prev-cyc-yellow.png") no-repeat;
+  left: 22%; }
+  .section-our-products .slick-prev::before {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-left: 2px solid #9b9b9b;
+    border-bottom: 2px solid #9b9b9b;
+    top: 19px;
+    left: 22px;
+    transform: rotate(45deg);
+    opacity: 1; }
+  .section-our-products .slick-prev:hover {
+    background: url("../imsges/next-cyc-yellow.png") no-repeat; }
+
+.section-our-products .slick-next {
+  background: url("../imsges/next-cyc-yellow.png") no-repeat;
+  right: 47%; }
+  .section-our-products .slick-next::before {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-right: 2px solid #9b9b9b;
+    border-bottom: 2px solid #9b9b9b;
+    top: 19px;
+    right: 22px;
+    transform: rotate(-45deg);
+    opacity: 1; }
+  .section-our-products .slick-next:hover {
+    background: url("../imsges/prev-cyc-yellow.png") no-repeat; }
+
+#tabs-1 {
+  position: relative; }
+
+.appendArrows {
+  position: absolute;
+  height: 52px;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3000; }
 
 /*# sourceMappingURL=main.css.map */

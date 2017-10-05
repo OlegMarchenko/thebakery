@@ -14,7 +14,10 @@ $(document).ready(function () {
 
     $('.sl_slide').slick();
 
-    $('.products-slider').slick();
+    $('.products-slider').slick({
+        appendArrows: $(".appendArrows"),
+        arrows: true
+    });
 
     $( "#tabs" ).tabs();
 });

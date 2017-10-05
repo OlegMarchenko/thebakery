@@ -177,15 +177,12 @@
 .product-holder {
   margin-top: 75px;
   background: #fff;
-  padding: 40px 60px 60px 45px;
+  padding-top: 40px;
 }
 
 #tabs {
-  display: flex;
   font-size: 0;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+
   li {
     display: inline-block;
     border-bottom: 2px solid #ebebe8;
@@ -247,4 +244,30 @@
 .recipe-product {
   color: #333;
   font-size: 14px;
+  p {
+    margin-bottom: 0;
+  }
+  span {
+    display: block;
+  }
 }
+
+.tab-top-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-initialized .slide-item {
+  display: flex;
+  justify-content: flex-end;
+  padding: 69px 65px 79px 45px;
+}
+
+.description-product {
+  max-width: 432px;
+  margin-left: 137px;
+}
+
+
+
