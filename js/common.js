@@ -13,4 +13,8 @@ $(document).ready(function () {
     });
 
     $('.sl_slide').slick();
+
+    $('.products-slider').slick();
+
+    $( "#tabs" ).tabs();
 });

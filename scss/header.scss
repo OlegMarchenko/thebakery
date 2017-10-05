@@ -64,13 +64,19 @@
     min-width: 108px;
     text-align: center;
     margin: 0 25px;
-    border-top: 1px solid transparent;
-    border-bottom: 1px solid transparent;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
     transition: .3s all;
     &:hover,
     &.active {
-      border-top: 1px solid #d3a929;
-      border-bottom: 1px solid #d3a929;
+      border-top: 2px solid #d3a929;
+      border-bottom: 2px solid #d3a929;
+    }
+    &.active a {
+      color: #d3a929;
+    }
+    &:hover a {
+      color: #d3a929;
     }
   }
   a {
@@ -79,5 +85,6 @@
     text-transform: uppercase;
     font-size: 14px;
     padding: 18px 0;
+    transition: .3s all;
   }
 }

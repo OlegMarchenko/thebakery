@@ -55,6 +55,11 @@ li {
   display: flex;
   flex-direction: column; }
 
+.container-about-us {
+  max-width: 870px;
+  padding: 0 30px;
+  margin: 0 auto; }
+
 @font-face {
   font-family: 'Adobe Garamond Pro Bold';
   src: url("../fonts/AGaramondPro-Bold.woff2") format("woff2"), url("../fonts/AGaramondPro-Bold.woff") format("woff"), url("../fonts/AGaramondPro-Bold.ttf") format("truetype");
@@ -125,18 +130,46 @@ li {
     min-width: 108px;
     text-align: center;
     margin: 0 25px;
-    border-top: 1px solid transparent;
-    border-bottom: 1px solid transparent;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
     transition: .3s all; }
     .navbar-nav li:hover, .navbar-nav li.active {
-      border-top: 1px solid #d3a929;
-      border-bottom: 1px solid #d3a929; }
+      border-top: 2px solid #d3a929;
+      border-bottom: 2px solid #d3a929; }
+    .navbar-nav li.active a {
+      color: #d3a929; }
+    .navbar-nav li:hover a {
+      color: #d3a929; }
   .navbar-nav a {
     display: inline-block;
     width: 100%;
     text-transform: uppercase;
     font-size: 14px;
-    padding: 18px 0; }
+    padding: 18px 0;
+    transition: .3s all; }
+
+.section {
+  padding-top: 100px; }
+
+.section-heading {
+  display: flex;
+  justify-content: center; }
+
+.section-title {
+  font-size: 50px;
+  color: #333;
+  text-transform: uppercase;
+  font-family: 'Adobe Garamond Pro', sans-serif;
+  position: relative; }
+  .section-title::before {
+    content: '';
+    position: absolute;
+    width: 139px;
+    height: 2px;
+    background: #9b9b9b;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%); }
 
 .light-header {
   background: url("../imsges/ginger-bakery-02-1-1920x1280.jpg") no-repeat;
@@ -176,13 +209,146 @@ li {
   justify-content: center;
   text-align: center;
   color: #fff;
-  font-family: 'Adobe Garamond Pro', sans-serif; }
+  font-family: 'Adobe Garamond Pro', sans-serif;
+  margin-top: -75px; }
 
 .about-product {
   font-size: 100px; }
 
 .color-scheme {
   padding-right: 15px; }
+
+.cards-holder {
+  padding: 70px 0 40px 0;
+  display: flex;
+  justify-content: space-between; }
+
+.card-quality .card-top {
+  position: relative;
+  padding-bottom: 17px; }
+  .card-quality .card-top::before {
+    content: '';
+    position: absolute;
+    top: 56px;
+    left: 58px;
+    width: 75px;
+    height: 75px;
+    background: url("../imsges/cereal.png") no-repeat; }
+
+.card-experience .card-top {
+  position: relative;
+  padding-bottom: 17px; }
+  .card-experience .card-top::before {
+    content: '';
+    position: absolute;
+    top: 58px;
+    left: 71px;
+    width: 54px;
+    height: 70px;
+    background: url("../imsges/medal.png") no-repeat; }
+
+.card-team .card-top {
+  position: relative;
+  padding-bottom: 17px; }
+  .card-team .card-top::before {
+    content: '';
+    position: absolute;
+    top: 65px;
+    left: 66px;
+    width: 76px;
+    height: 56px;
+    background: url("../imsges/team.png") no-repeat; }
+.card-team .card-description {
+  max-width: 120px;
+  margin: 0 auto;
+  line-height: 1.4; }
+
+.card-body {
+  text-align: center; }
+
+.card-description {
+  font-size: 26px;
+  font-family: 'Adobe Garamond Pro', sans-serif;
+  color: #333; }
+
+.nav-about-us {
+  position: relative;
+  z-index: 2; }
+  .nav-about-us::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    box-shadow: 0 5px 14px rgba(37, 40, 44, 0.18);
+    z-index: -1; }
+
+.section-our-products {
+  padding: 110px 0;
+  background: #f8f8f7; }
+
+.product-holder {
+  margin-top: 75px;
+  background: #fff;
+  padding: 40px 60px 60px 45px; }
+
+#tabs {
+  display: flex;
+  font-size: 0;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; }
+  #tabs li {
+    display: inline-block;
+    border-bottom: 2px solid #ebebe8;
+    font-size: 0; }
+    #tabs li + li {
+      padding: 0 70px; }
+    #tabs li:last-child {
+      padding: 0; }
+
+.title-tabs {
+  font-size: 20px;
+  font-family: 'Adobe Garamond Pro', sans-serif;
+  text-transform: uppercase;
+  color: #333;
+  padding-right: 110px; }
+
+.tab {
+  font-size: 19px;
+  text-transform: uppercase;
+  padding: 12px 0;
+  display: inline-block;
+  outline: none;
+  min-width: 155px;
+  text-align: center; }
+
+.tab-list {
+  margin: 0 -35px; }
+
+.ui-state-active a,
+.ui-state-hover a {
+  color: #d3a929;
+  position: relative; }
+  .ui-state-active a::before,
+  .ui-state-hover a::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 155px;
+    background: #d3a929;
+    bottom: -2px;
+    left: 50%;
+    transform: translate(-50%); }
+
+.product-title {
+  font-size: 26px;
+  color: #333; }
+
+.recipe-product {
+  color: #333;
+  font-size: 14px; }
 
 .btn-radio {
   position: relative;
@@ -203,16 +369,16 @@ li {
 .btn-radio.active:before {
   background: #d3a929; }
 
-.slick-prev,
-.slick-next {
+.section-slider .slick-prev,
+.section-slider .slick-next {
   width: 52px;
   height: 52px;
   z-index: 1001;
   transition: .2s all; }
 
-.slick-prev {
+.section-slider .slick-prev {
   background: url("../imsges/prev-arrow.png") no-repeat; }
-  .slick-prev::before {
+  .section-slider .slick-prev::before {
     content: '';
     position: absolute;
     width: 14px;
@@ -223,12 +389,12 @@ li {
     left: 22px;
     transform: rotate(45deg);
     opacity: 1; }
-  .slick-prev:hover {
+  .section-slider .slick-prev:hover {
     background: url("../imsges/next-arrow.png") no-repeat; }
 
-.slick-next {
+.section-slider .slick-next {
   background: url("../imsges/next-arrow.png") no-repeat; }
-  .slick-next::before {
+  .section-slider .slick-next::before {
     content: '';
     position: absolute;
     width: 14px;
@@ -239,7 +405,7 @@ li {
     right: 22px;
     transform: rotate(-45deg);
     opacity: 1; }
-  .slick-next:hover {
+  .section-slider .slick-next:hover {
     background: url("../imsges/prev-arrow.png") no-repeat; }
 
 /*# sourceMappingURL=main.css.map */

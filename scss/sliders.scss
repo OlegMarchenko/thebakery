@@ -1,12 +1,12 @@
-.slick-prev,
-.slick-next {
+.section-slider .slick-prev,
+.section-slider .slick-next {
   width: 52px;
   height: 52px;
   z-index: 1001;
   transition: .2s all;
 }
 
-.slick-prev {
+.section-slider .slick-prev {
     background: url("../imsges/prev-arrow.png") no-repeat;
   &::before {
     content: '';
@@ -25,7 +25,7 @@
   }
 }
 
-.slick-next {
+.section-slider .slick-next {
   background: url("../imsges/next-arrow.png") no-repeat;
   &::before {
     content: '';
