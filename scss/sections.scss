@@ -101,6 +101,44 @@
   .recipe-product {
     color: #fff;
   }
+  &.section-our-products .slick-prev {
+    background: url("../imsges/prev-cyc-grey.png") no-repeat;
+    left: 22%;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      border-left: 2px solid #fff;
+      border-bottom: 2px solid #fff;
+      top: 19px;
+      left: 22px;
+      transform: rotate(45deg);
+      opacity: 1;
+    }
+    &:hover {
+      background: url("../imsges/next-cyc-grey.png") no-repeat;
+    }
+  }
+  &.section-our-products .slick-next {
+    background: url("../imsges/next-cyc-grey.png") no-repeat;
+    right: 47%;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      border-right: 2px solid #fff;
+      border-bottom: 2px solid #fff;
+      top: 19px;
+      right: 22px;
+      transform: rotate(-45deg);
+      opacity: 1;
+    }
+    &:hover {
+      background: url("../imsges/prev-cyc-grey.png") no-repeat;
+    }
+  }
 }
 
 .section-contact-us-dark {

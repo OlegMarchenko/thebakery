@@ -226,6 +226,38 @@ li {
 .section-our-products-dark .product-title,
 .section-our-products-dark .recipe-product {
   color: #fff; }
+.section-our-products-dark.section-our-products .slick-prev {
+  background: url("../imsges/prev-cyc-grey.png") no-repeat;
+  left: 22%; }
+  .section-our-products-dark.section-our-products .slick-prev::before {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    top: 19px;
+    left: 22px;
+    transform: rotate(45deg);
+    opacity: 1; }
+  .section-our-products-dark.section-our-products .slick-prev:hover {
+    background: url("../imsges/next-cyc-grey.png") no-repeat; }
+.section-our-products-dark.section-our-products .slick-next {
+  background: url("../imsges/next-cyc-grey.png") no-repeat;
+  right: 47%; }
+  .section-our-products-dark.section-our-products .slick-next::before {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    top: 19px;
+    right: 22px;
+    transform: rotate(-45deg);
+    opacity: 1; }
+  .section-our-products-dark.section-our-products .slick-next:hover {
+    background: url("../imsges/prev-cyc-grey.png") no-repeat; }
 
 .section-contact-us-dark {
   padding: 120px 0;
@@ -575,8 +607,8 @@ li {
   .section-our-products .slick-next:hover {
     background: url("../imsges/prev-cyc-yellow.png") no-repeat; }
 
-#tabs-1
-#tabs-2
+#tabs-1,
+#tabs-2,
 #tabs-3 {
   position: relative; }
 
